@@ -1,0 +1,395 @@
+/* Base or Reset Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for body text */
+    font-size: 16px; /* Set base font size */
+    line-height: 1.5; /* Improve line spacing */
+    color: #333; /* Set font color */
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700; /* Bold for headings */
+    color: #222; /* Dark color for headings */
+  }
+  
+  p {
+    font-size: 1rem; /* Set font size for paragraphs */
+    color: #444; /* Light dark color for paragraphs */
+  }
+  
+  a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; /* Remove underline */
+    color: #0066cc; /* Link color */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Adjust the padding */
+    background-color: #ffe4ad; /* You can change this to any color */
+    margin-top: -13px;
+    margin-left: -10px;
+    margin-bottom: auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 2px 5px hsla(202, 70%, 49%, 0.1); /* Add shadow for depth */
+  }
+  
+  /* Logo Styling */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  .logo-img {
+    margin-left: 10px;
+    margin-top: -40px;
+    margin-bottom: -40px;
+    width: 120px; /* Adjust the width as needed */
+    height: auto; /* Keep the aspect ratio intact */
+  }
+  
+  /* Navigation Links Styling */
+  .nav-links {
+    list-style-type: none;
+    display: flex; /* Aligns links horizontally */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 45px; /* Space between each link */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(15, 8, 8);
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 10px; /* Add some padding for clickable area */
+  }
+  
+  .nav-links a:hover {
+    color: #f0f0f0; /* Change color on hover */
+    text-decoration: underline;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #ea4a4a;
+    justify-content: center;
+    position: relative;
+    color: rgb(241, 241, 241);
+    width: 100%;
+    left: 0; /* Ensure it spans the full width */
+    margin-top: 190px; /* Push the footer to the bottom */
+  }
+  
+  /* Destination Cards Styling */
+  /* Container for the destination cards */
+  .destination-list {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 20px; /* Optional: space between cards */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    margin-top: 150px; /* Add space below the search bar, adjust as needed */
+    padding: 20px; /* Optional: Add padding for inner space */
+  }
+  
+  /* Style for each destination card */
+  .destination-card {
+    border: 1px solid #f5f5f5; /* Border around each card */
+    padding: 10px; /* Padding inside the card */
+    margin: 10px; /* Margin between cards */
+    width: 200px; /* Width of each card */
+    box-sizing: border-box; /* Prevent overflow */
+  }
+  
+  /* Style for the image inside each card */
+  .destination-card img {
+    width: 100%; /* Make the image take up the full width of the card */
+    height: 150px; /* Set the height of the image */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+  }
+  
+  /* Style for destination title */
+  .destination h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  
+  /* Centered Search Bar Below the Header */
+  .search-bar {
+    position: absolute; /* Set to absolute for positioning relative to the document body */
+    top:113px;
+    left: 50%;/* Move to the center horizontally */
+    transform: translateX(-50%); /* Center it perfectly by shifting it back by 50% of its own width */
+    width: 100%;
+    max-width: 600px; /* Set max-width as per your design */
+    padding: 10px;
+    background-color: #f0e6e6;
+    box-shadow: 0 4px 6px rgba(25, 216, 121, 0.1);
+    border-radius: 8px;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  /* Input and Suggestions inside the Search Bar */
+  .input-wrapper {
+    position: relative;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  .suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Social Media Links Styling */
+  .social-media-links a {
+    margin-right: 10px;
+  }
+  
+  .social-media-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* List Styling */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      flex-direction: column; /* Stack the links vertically */
+      text-align: center;
+    }
+  
+    .nav-links li {
+      margin-bottom: 10px;
+    }
+  
+    .logo-img {
+      width: 100px;
+      height: auto; /* Adjust logo size for small screens */
+    }
+  
+    .search-bar {
+      max-width: 100%; /* Ensure search bar uses full width on small screens */
+    }
+  }
+  
+  /* General container to center the form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Form styling */
+  .login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Form Group (label and input) */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button Styling */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Sign-up link */
+  .signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* For responsiveness */
+  @media screen and (max-width: 600px) {
+    .login-form {
+        padding: 15px;
+        width: 90%;
+    }
+  
+    .login-button {
+        font-size: 14px;
+    }
+  }
+  /* src/styles/main.css */
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .signup-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-form p {
+    text-align: center;
+  }
+  
+  .signup-form .login-link {
+    font-size: 14px;
+  }
+  
+  .signup-form .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-form .login-link a:hover {
+    text-decoration: underline;
+  }
+  
